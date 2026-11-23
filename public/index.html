@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CWEP Lozza Example</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    main { max-width: 48rem; margin: 2rem auto; padding: 0 1rem; }
+    label, input { display: block; }
+    input { box-sizing: border-box; width: 100%; margin: 0.35rem 0 0.75rem; }
+    pre { overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+  </style>
+  <script type="module" src="./demo.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Lozza 11.0</h1>
+    <p>Clientseitige Schachanalyse über CWEP 1.0</p>
+    <section id="demo" hidden>
+      <form>
+        <label for="fen">Stellung (FEN)</label>
+        <input id="fen" spellcheck="false" maxlength="160" required
+          value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1">
+        <button type="submit">Analysieren</button>
+        <button type="button" id="stop" disabled>Abbrechen</button>
+      </form>
+      <p id="status" role="status"></p>
+      <pre id="result"></pre>
+    </section>
+    <p><a href="./licenses.html">Lizenzen und Herkunft</a></p>
+  </main>
+</body>
+</html>

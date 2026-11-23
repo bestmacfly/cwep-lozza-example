@@ -1,0 +1,9 @@
+{
+  "protocol": "cwep",
+  "version": "1.0",
+  "supportedVersions": ["1.0"],
+  "transport": "webview-bridge",
+  "plugin": { "id": "cwep-lozza-example", "name": "CWEP Lozza Example", "version": "1.0.0" },
+  "engine": { "name": "Lozza", "version": "11.0" },
+  "features": { "analysis": true, "multiPv": true, "moves": true, "cancellation": true, "setOptions": true }
+}
